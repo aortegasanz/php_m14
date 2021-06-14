@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "1d9fe15c-9caa-4f8f-8aa8-deb9bc26da44",
+		"name": "PHP_M14",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SHOPS NEW",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTE0ZTA1ZDNlY2E5YjU1YzcyNTkxNWE1YWRlMDRiOWViZTJhYzQwN2JlNzYwNDg3YWRlZGRmNDk5YzA4ODEyODViMTQ0MTRlODA0MjMxMmIiLCJpYXQiOjE2MjM2OTgzMTQuMTk2OTk3LCJuYmYiOjE2MjM2OTgzMTQuMTk2OTk5LCJleHAiOjE2NTUyMzQzMTQuMTkzOTkyLCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.UuAOH2IXUjp9vH_84Vzz2Lm1PQ4yeZkI0U-jYu0wAdHl-0DTd-0nx3EQjfk0Y_BdtNyObe8CY7XLTMkANIYP7GyjzhXgC21JbZpnaDLhX9oR9NdLHWGQqm2veukp2tAejGbC0AboHNyrItT6jzU5skBUHuMPjD56PVe2qqLUhUDfUjSFLiprcoAUJL0ulEJgqDXAcpRlZlVSRbH3ogikpJRfJOrY0rRxBuylsTmKO-eaaBlB-ikTUkumb6RZsF-T5qMBc31JmKEPtDQeYZcbe_7QdTzRNVcf8qcP98M09VHeSSFYGltn1BpAftVmIBEUe5jKFrZwmVJLmeVAPdTxvGDTzLYKKY_Cwv3O3BQJQGQj8iRh0CYzylYHVOc_mMZ-qTA0t81l8OU6dcU_-NyjcbJDlzz7iZtbq0esvDEr4vzzmHDauUc3OMc3IIQsyorpwLVO6IyQvg3di9F95lSNyCVHWgMl50PlRrOdt-3bVxhYRSVzPVFULMvBI0Ip4M4sH7HXdR5x8AE4NTRUVG2LnRsz24aDyxu_Es45eDgkKHUSV93ylZ4QLieMb_X90ouDa6IOxnLUB0Dt9xziysEAGI9bQ_gVFKXUTmsXXpjcvzn2pEvOYhcNANwYTWfloZxWpYRwxehViCIqNfp92mZaPxpQidH2EzBv49QoinHQOJs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "SHOP XXX",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/shops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PICTURE NEW",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTE0ZTA1ZDNlY2E5YjU1YzcyNTkxNWE1YWRlMDRiOWViZTJhYzQwN2JlNzYwNDg3YWRlZGRmNDk5YzA4ODEyODViMTQ0MTRlODA0MjMxMmIiLCJpYXQiOjE2MjM2OTgzMTQuMTk2OTk3LCJuYmYiOjE2MjM2OTgzMTQuMTk2OTk5LCJleHAiOjE2NTUyMzQzMTQuMTkzOTkyLCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.UuAOH2IXUjp9vH_84Vzz2Lm1PQ4yeZkI0U-jYu0wAdHl-0DTd-0nx3EQjfk0Y_BdtNyObe8CY7XLTMkANIYP7GyjzhXgC21JbZpnaDLhX9oR9NdLHWGQqm2veukp2tAejGbC0AboHNyrItT6jzU5skBUHuMPjD56PVe2qqLUhUDfUjSFLiprcoAUJL0ulEJgqDXAcpRlZlVSRbH3ogikpJRfJOrY0rRxBuylsTmKO-eaaBlB-ikTUkumb6RZsF-T5qMBc31JmKEPtDQeYZcbe_7QdTzRNVcf8qcP98M09VHeSSFYGltn1BpAftVmIBEUe5jKFrZwmVJLmeVAPdTxvGDTzLYKKY_Cwv3O3BQJQGQj8iRh0CYzylYHVOc_mMZ-qTA0t81l8OU6dcU_-NyjcbJDlzz7iZtbq0esvDEr4vzzmHDauUc3OMc3IIQsyorpwLVO6IyQvg3di9F95lSNyCVHWgMl50PlRrOdt-3bVxhYRSVzPVFULMvBI0Ip4M4sH7HXdR5x8AE4NTRUVG2LnRsz24aDyxu_Es45eDgkKHUSV93ylZ4QLieMb_X90ouDa6IOxnLUB0Dt9xziysEAGI9bQ_gVFKXUTmsXXpjcvzn2pEvOYhcNANwYTWfloZxWpYRwxehViCIqNfp92mZaPxpQidH2EzBv49QoinHQOJs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "CUADRO 1",
+							"type": "text"
+						},
+						{
+							"key": "author_name",
+							"value": "Anónimo",
+							"type": "text"
+						},
+						{
+							"key": "import",
+							"value": "123.25",
+							"type": "text"
+						},
+						{
+							"key": "entry_date",
+							"value": "2021-06-14 21:24:23",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/shops/3/pictures",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"shops",
+						"3",
+						"pictures"
+					],
+					"query": [
+						{
+							"key": "            'name' => 'required|min:4',\n            'author_name' => 'required|min:4',\n            'import' => 'required|numeric',\n            'entry_date' => 'required|date',",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "cuadro 1",
+							"disabled": true
+						},
+						{
+							"key": "author_name",
+							"value": "Anónimo",
+							"disabled": true
+						},
+						{
+							"key": "import",
+							"value": "100.25",
+							"disabled": true
+						},
+						{
+							"key": "entry_date",
+							"value": "2021-06-14 21:23:23",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHOPS - List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTE0ZTA1ZDNlY2E5YjU1YzcyNTkxNWE1YWRlMDRiOWViZTJhYzQwN2JlNzYwNDg3YWRlZGRmNDk5YzA4ODEyODViMTQ0MTRlODA0MjMxMmIiLCJpYXQiOjE2MjM2OTgzMTQuMTk2OTk3LCJuYmYiOjE2MjM2OTgzMTQuMTk2OTk5LCJleHAiOjE2NTUyMzQzMTQuMTkzOTkyLCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.UuAOH2IXUjp9vH_84Vzz2Lm1PQ4yeZkI0U-jYu0wAdHl-0DTd-0nx3EQjfk0Y_BdtNyObe8CY7XLTMkANIYP7GyjzhXgC21JbZpnaDLhX9oR9NdLHWGQqm2veukp2tAejGbC0AboHNyrItT6jzU5skBUHuMPjD56PVe2qqLUhUDfUjSFLiprcoAUJL0ulEJgqDXAcpRlZlVSRbH3ogikpJRfJOrY0rRxBuylsTmKO-eaaBlB-ikTUkumb6RZsF-T5qMBc31JmKEPtDQeYZcbe_7QdTzRNVcf8qcP98M09VHeSSFYGltn1BpAftVmIBEUe5jKFrZwmVJLmeVAPdTxvGDTzLYKKY_Cwv3O3BQJQGQj8iRh0CYzylYHVOc_mMZ-qTA0t81l8OU6dcU_-NyjcbJDlzz7iZtbq0esvDEr4vzzmHDauUc3OMc3IIQsyorpwLVO6IyQvg3di9F95lSNyCVHWgMl50PlRrOdt-3bVxhYRSVzPVFULMvBI0Ip4M4sH7HXdR5x8AE4NTRUVG2LnRsz24aDyxu_Es45eDgkKHUSV93ylZ4QLieMb_X90ouDa6IOxnLUB0Dt9xziysEAGI9bQ_gVFKXUTmsXXpjcvzn2pEvOYhcNANwYTWfloZxWpYRwxehViCIqNfp92mZaPxpQidH2EzBv49QoinHQOJs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/api/shops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PICTURE - List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTE0ZTA1ZDNlY2E5YjU1YzcyNTkxNWE1YWRlMDRiOWViZTJhYzQwN2JlNzYwNDg3YWRlZGRmNDk5YzA4ODEyODViMTQ0MTRlODA0MjMxMmIiLCJpYXQiOjE2MjM2OTgzMTQuMTk2OTk3LCJuYmYiOjE2MjM2OTgzMTQuMTk2OTk5LCJleHAiOjE2NTUyMzQzMTQuMTkzOTkyLCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.UuAOH2IXUjp9vH_84Vzz2Lm1PQ4yeZkI0U-jYu0wAdHl-0DTd-0nx3EQjfk0Y_BdtNyObe8CY7XLTMkANIYP7GyjzhXgC21JbZpnaDLhX9oR9NdLHWGQqm2veukp2tAejGbC0AboHNyrItT6jzU5skBUHuMPjD56PVe2qqLUhUDfUjSFLiprcoAUJL0ulEJgqDXAcpRlZlVSRbH3ogikpJRfJOrY0rRxBuylsTmKO-eaaBlB-ikTUkumb6RZsF-T5qMBc31JmKEPtDQeYZcbe_7QdTzRNVcf8qcP98M09VHeSSFYGltn1BpAftVmIBEUe5jKFrZwmVJLmeVAPdTxvGDTzLYKKY_Cwv3O3BQJQGQj8iRh0CYzylYHVOc_mMZ-qTA0t81l8OU6dcU_-NyjcbJDlzz7iZtbq0esvDEr4vzzmHDauUc3OMc3IIQsyorpwLVO6IyQvg3di9F95lSNyCVHWgMl50PlRrOdt-3bVxhYRSVzPVFULMvBI0Ip4M4sH7HXdR5x8AE4NTRUVG2LnRsz24aDyxu_Es45eDgkKHUSV93ylZ4QLieMb_X90ouDa6IOxnLUB0Dt9xziysEAGI9bQ_gVFKXUTmsXXpjcvzn2pEvOYhcNANwYTWfloZxWpYRwxehViCIqNfp92mZaPxpQidH2EzBv49QoinHQOJs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost/api/shops/7/pictures",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"shops",
+						"7",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PICTURE - Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTE0ZTA1ZDNlY2E5YjU1YzcyNTkxNWE1YWRlMDRiOWViZTJhYzQwN2JlNzYwNDg3YWRlZGRmNDk5YzA4ODEyODViMTQ0MTRlODA0MjMxMmIiLCJpYXQiOjE2MjM2OTgzMTQuMTk2OTk3LCJuYmYiOjE2MjM2OTgzMTQuMTk2OTk5LCJleHAiOjE2NTUyMzQzMTQuMTkzOTkyLCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.UuAOH2IXUjp9vH_84Vzz2Lm1PQ4yeZkI0U-jYu0wAdHl-0DTd-0nx3EQjfk0Y_BdtNyObe8CY7XLTMkANIYP7GyjzhXgC21JbZpnaDLhX9oR9NdLHWGQqm2veukp2tAejGbC0AboHNyrItT6jzU5skBUHuMPjD56PVe2qqLUhUDfUjSFLiprcoAUJL0ulEJgqDXAcpRlZlVSRbH3ogikpJRfJOrY0rRxBuylsTmKO-eaaBlB-ikTUkumb6RZsF-T5qMBc31JmKEPtDQeYZcbe_7QdTzRNVcf8qcP98M09VHeSSFYGltn1BpAftVmIBEUe5jKFrZwmVJLmeVAPdTxvGDTzLYKKY_Cwv3O3BQJQGQj8iRh0CYzylYHVOc_mMZ-qTA0t81l8OU6dcU_-NyjcbJDlzz7iZtbq0esvDEr4vzzmHDauUc3OMc3IIQsyorpwLVO6IyQvg3di9F95lSNyCVHWgMl50PlRrOdt-3bVxhYRSVzPVFULMvBI0Ip4M4sH7HXdR5x8AE4NTRUVG2LnRsz24aDyxu_Es45eDgkKHUSV93ylZ4QLieMb_X90ouDa6IOxnLUB0Dt9xziysEAGI9bQ_gVFKXUTmsXXpjcvzn2pEvOYhcNANwYTWfloZxWpYRwxehViCIqNfp92mZaPxpQidH2EzBv49QoinHQOJs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost/api/shops/7/pictures",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"shops",
+						"7",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AUTH - Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "alberto",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ortegasanz@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AUTH - Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "ortegasanz@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AUTH - Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjFlMjZlNjgyYWNkNjUzMGFjMjYxZmUxODkxZDdjOTZhNzM1MmZiYzBkZjdmOWFkNWRjZjFhNTg4NWY5NzMwOTRlMDZkNTNmOTI1NzkxODciLCJpYXQiOjE2MjM2OTczNDYuMTA1NDY3LCJuYmYiOjE2MjM2OTczNDYuMTA1NDY5LCJleHAiOjE2NTUyMzMzNDYuMTAyNzY3LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.D94KjRmoyChxG9L6pgCs7e1nxv0apTS2fqTjE_wi280Ipps8fjq3HlqkF0cmHMSht1FCxsvo7SYUjFTxnJYQ_1VKnHL3fUoDOE2Kl1kbtN3lMRwk9uX6HbhzdYluJ6bznje6k9BRgjAU1elf1jhMT3NmM8-r0aft9C2c1hQyPSsKEkac9bAfFeZob8nPxCA7kmbjERka6dzaqHBQm4GBhcIPBMQUdgYnUkTM7rY_RaoxtzfgMRgBxHXo1xuXyZTo6ilPOluiVU1fC9KKLbAek2AZkpBzmL5564ysQRmHPPUyN6pCEl4VJXbnac1MDHTXEzIsD-yNO14JEDNIFZPk2ivrE3Eo9fCtlBLJA4qyA81xliHD9UQhp-AGnbIdSBURil26--GrMUnQ4z_ubZ5RXvZOabs8lz2rUYehnU8IX1U5QaTVTU5UmA552Baw0-_LYvGLWdGUILeotVxInaB2DLFzoepw5jfwMFJ4A47hxehE3ff4l6s9HxZTTLM8WlCrKri1dwIbwPpQiRA59aEVvoCKL_Enc25tloxoFpMp2edQ1cTiJFTZvgrWWQEwtWhRNJqKiMV25b1PYwFMVjtEY-5FAYfh2Q27N1fxD-XiNNGYX5uFlVEVGAgh-QTWOJ4dfHyWCxv6gxDm6Q7sWaQMxQcLdhA9-wgL4qOVIuAQrvE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

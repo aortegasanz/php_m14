@@ -49,6 +49,7 @@ class ShopController extends Controller
     }
 
     public function picture_delete (Request $request, $id) {       
+        //if $role->hasPermissionTo('destroy_pictures');
         Picture::where('shop_id', $id)->delete();
         return response()->json(['Ok' => 'Deleted Succesfully'], 200);
     }

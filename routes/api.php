@@ -33,5 +33,10 @@ Route::middleware('auth:api')->group(function () {
     
     Route::post  ('/shops/{id}/pictures',    [ShopController::class, 'picture_create']);
     Route::get   ('/shops/{id}/pictures',    [ShopController::class, 'picture_list']);
-    Route::delete('/shops/{id}/pictures',    [ShopController::class, 'picture_delete']);
+
+    Route::group(['middleware' => ['permission:destroy_pictures']], function () {
+        Route::delete('/shops/{id}/pictures',    [ShopController::class, 'picture_delete']);
+    });
+
 });
+

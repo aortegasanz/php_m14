@@ -54,4 +54,21 @@ class ShopController extends Controller
         return response()->json(['Ok' => 'Deleted Succesfully'], 200);
     }
 
+
+    /* PICTURES VUE.js */
+    public function index() {
+        $pictures = Picture::all();
+        return response()->json(compact('pictures'));
+    }
+
+    public function store(Request $request) {
+        $picture = Picture::create($request->all());
+        return response()->json(compact('picture'));
+    }
+
+    public function delete(Picture $picture) {
+        $picture->delete();
+        return response()->json(compact('picture'));        
+    }
+
 }

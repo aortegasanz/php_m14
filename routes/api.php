@@ -40,3 +40,6 @@ Route::middleware('auth:api')->group(function () {
 
 });
 
+Route::get   ('pictures', [ShopController::class, 'index' ])->name('pictures.index');
+Route::post  ('pictures', [ShopController::class, 'store' ])->name('pictures.store');
+Route::delete('pictures/{picture}', [ShopController::class, 'delete'])->name('pictures.delete');
